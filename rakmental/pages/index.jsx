@@ -1,15 +1,9 @@
-import React from 'react';
-import Header from '../components/Header';
-import MainContent from '../components/MainContent';
-import Footer from '../components/Footer';
-
 const Home = () => {
   return (
-    <div>
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
+    <section>
+      <h1>Welcome to MyBrand</h1>
+      <p>Your go-to platform for awesome content.</p>
+    </section>
   );
 };
 
