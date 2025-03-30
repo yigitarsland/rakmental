@@ -1,58 +1,74 @@
-.content-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .text-section {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #003087;
-  }
-  
-  p {
-    color: black;
-  }
-  
-  .buttons {
-    margin-top: 20px;
-  }
-  
-  .check-button {
-    background-color: #4682B4;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    margin-right: 10px;
-  }
-  
-  .contact-button {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border: 1px solid black;
-  }
-  
-  .image-section {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .image-section img {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  @media (max-width: 768px) {
-    .content-wrapper {
-      flex-direction: column;
-    }
-  }
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.text-section {
+  max-width: 50%;
+}
+
+.text-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-section p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.check-button, .contact-button, .appointment-button, .order-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.check-button:hover, .contact-button:hover, .appointment-button:hover, .order-button:hover {
+  background-color: #0073e6;
+}
+
+.image-section img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.appointment-container {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.coaching-plans {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.plan {
+  width: 30%;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.plan h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.plan p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}

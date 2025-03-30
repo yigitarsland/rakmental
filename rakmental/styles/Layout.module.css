@@ -1,5 +1,21 @@
+/* layout.module.css */
+
+/* Main container with max width and padding */
 .main {
   max-width: 1200px;
   margin: auto;
   padding: 2rem;
+  background-color: var(--main-bg-color); /* Default background color */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+}
+
+/* Dark Mode Adjustments */
+html.dark .main {
+  background-color: #1a202c; /* Dark background color */
 }
